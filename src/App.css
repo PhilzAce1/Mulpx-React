@@ -1,38 +1,30 @@
-.App {
-  text-align: center;
+:root {
+  --green: #0d4138;
+  --lightGray: #dbd0c2;
+  --darkGray: #3d4234;
+  --darkBrown: #7d5c44;
+  --lightBrown: rgba(219, 169, 118, 0.8);
+  --white: #f2f2f2;
+  --black: #232528;
+}
+body {
+  font-family: "Neue Haas Unica", sans-serif !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.h1 {
+  font-size: 24px !important;
+  font-weight: bold !important;
+  color: var(--black) !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar-toggler {
+  background: var(--green) !important;
+  color: var(--white) !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.nav-item {
+  margin-left: 200px !important;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+i {
+  color: var(--green) !important;
 }
