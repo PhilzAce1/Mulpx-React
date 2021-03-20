@@ -1,0 +1,20 @@
+.flex {
+  display: flex;
+}
+.flex_col {
+  flex-flow: column nowrap;
+}
+.flex_row {
+  flex-flow: row nowrap;
+}
+
+ul,
+li {
+  text-decoration: none;
+  list-style: none;
+}
+.btn {
+  color: white;
+  padding: 10px 20px;
+  background: gray;
+}

@@ -1,0 +1,113 @@
+.landing_page {
+  height: 100vh;
+  width: 100vw;
+}
+
+.landing_page nav {
+  background: #0d4138;
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  padding: 0 10%;
+}
+.landing_page .logo img {
+  height: 40px;
+}
+.landing_page .menu,
+.landing_page .mobile_menu {
+  display: flex;
+  align-items: center;
+  color: white;
+  justify-content: space-between;
+}
+.landing_page .menu {
+  width: 70%;
+}
+
+.landing_page .mobile_menu {
+  width: 50%;
+}
+
+.landing_page .btn {
+  color: white;
+  padding: 8px 30px;
+  background: gray;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+}
+
+.landing_page .btn_primary {
+  background: rgba(255, 255, 255, 0.26);
+}
+.landing_page .btn_secondary {
+  background: #dba976;
+}
+
+.landing_page .btn_tertiary {
+  background: #7d5c44;
+}
+
+.landing_page .main {
+  color: white;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(
+      180deg,
+      rgba(13, 65, 56, 0.77) 0%,
+      rgba(13, 65, 56, 0.77) 100%
+    ),
+    url('../images/landing_page_flip.png');
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column nowrap;
+  height: 90%;
+}
+.landing_page .main article {
+  width: 50%;
+  text-align: center;
+}
+.landing_page .main article h1 {
+  font-size: 3.5em;
+  color: #dba976;
+}
+@media (max-width: 760px) {
+  .landing_page .main {
+    background-image: linear-gradient(
+        180deg,
+        rgba(13, 65, 56, 0.77) 0%,
+        rgba(13, 65, 56, 0.77) 100%
+      ),
+      url('../images/landing_page_flip_mobile.png');
+    align-items: flex-start;
+    padding: 0 5%;
+  }
+  .landing_page .main article h1 {
+    font-size: 2em;
+  }
+  .landing_page .main article {
+    text-align: start;
+    width: 80%;
+  }
+  .mobile_display_none {
+    display: none !important;
+  }
+  .landing_page button#hambugger {
+    border-radius: 10px;
+    background: #dba976;
+    padding: 5px;
+  }
+  .landing_page nav {
+    padding: 0 5%;
+  }
+}
+
+@media (min-width: 760px) {
+  .desktop_hidden {
+    display: none !important;
+  }
+}
