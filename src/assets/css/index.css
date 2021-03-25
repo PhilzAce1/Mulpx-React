@@ -1,5 +1,6 @@
 @import './landing.css';
 @import './lib.css';
+@import './onboarding.css';
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

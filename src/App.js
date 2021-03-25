@@ -1,9 +1,15 @@
+/**===============External dependencies================= */
 import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
+
+/**===============Components================= */
+import LandingPage from 'pages/Landing';
+import SigninPage from 'pages/Signin';
+import SignupPage from 'pages/Signup';
+
+/**=================Style==================== */
 import 'bootstrap/dist/css/bootstrap.min.css';
-import LandingPage from './pages/Landing';
-import SigninPage from './pages/Signin';
-import SignupPage from './pages/Signup';
+
 class App extends Component {
   render() {
     return (

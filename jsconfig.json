@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "allowSyntheticDefaultImports": false,
+    "module": "commonJS",
+    "target": "es6",
+    "paths": {
+      "*": ["./src/*"]
+    }
+  },
+  "include": ["./src/**/*"]
+}
