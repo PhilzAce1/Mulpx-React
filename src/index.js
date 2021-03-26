@@ -1,11 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import 'react-toastify/dist/ReactToastify.css';
 import 'antd/dist/antd.css';
 import './assets/css/index.css';
 import App from './App';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Provider } from 'react-redux';
+import { toast } from 'react-toastify';
 import store from 'config/store';
+
+toast.configure();
 
 ReactDOM.render(
 	<React.StrictMode>

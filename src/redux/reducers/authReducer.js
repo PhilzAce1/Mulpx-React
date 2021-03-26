@@ -12,7 +12,9 @@ export default function authReducer(state = initialState, action) {
 		case REGISTER_SUCCESS:
 			return {
 				...state,
-				token: action.payload.accessToken,
+				email: action.payload.email,
+				fullname: action.payload.fullname,
+				token: action.payload.token,
 				isAuthenticated: true,
 			};
 
