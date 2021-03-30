@@ -24,5 +24,6 @@ jobs:
             - ~/.cache ## cache both yarn and Cypress!
       # - run: yarn lint
       # - run: yarn unit
+      - run: sudo chown -R $USER /usr/local/lib/node_modules
       - run: npm install -g wait-on
       - run: bin/cypress
