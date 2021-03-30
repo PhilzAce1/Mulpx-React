@@ -10,7 +10,6 @@ import SignupPage from 'pages/Signup';
 /**=================Style==================== */
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-console.log('helllo world');
 class App extends Component {
 	render() {
 		return (
