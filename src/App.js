@@ -10,18 +10,19 @@ import SignupPage from 'pages/Signup';
 /**=================Style==================== */
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+console.log('helllo world');
 class App extends Component {
-  render() {
-    return (
-      <React.Fragment>
-        <Switch>
-          <Route exact path="/" component={LandingPage} />
-          <Route path="/signin" component={SigninPage} />
-          <Route path="/signup" component={SignupPage} />
-        </Switch>
-      </React.Fragment>
-    );
-  }
+	render() {
+		return (
+			<React.Fragment>
+				<Switch>
+					<Route exact path="/" component={LandingPage} />
+					<Route path="/signin" component={SigninPage} />
+					<Route path="/signup" component={SignupPage} />
+				</Switch>
+			</React.Fragment>
+		);
+	}
 }
 
 export default App;
