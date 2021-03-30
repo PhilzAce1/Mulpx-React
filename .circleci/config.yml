@@ -1,33 +1,13 @@
-version: 2
-jobs:
+version: 2.1
+orbs:
+  cypress: cypress-io/cypress@1.27.0
+workflows:
   build:
-    docker:
-      - image: circleci/node:10.16.3
-      - image: cypress/base:8
-        environment:
-          ## this enables colors in the output
-          TERM: xterm
-    working_directory: ~/app
-    steps:
-      - checkout
-      - restore_cache:
-          keys:
-            - v1-deps-{{ .Branch }}-{{ checksum "package.json" }}
-            - v1-deps-{{ .Branch }}
-            - v1-deps
-      - run:
-          name: Install Dependencies
-          command: yarn install --frozen-lockfile --no-package-lock
-      - save_cache:
-          key: v1-deps-{{ .Branch }}-{{ checksum "package.json" }}
-          paths:
-            - ~/.cache ## cache both yarn and Cypress!
-      # - run: yarn lint
-      # - run: yarn unit
-      # - run: sudo chown -R $USER /usr/local/lib/node_modules
-      - run: sudo npm install -g wait-on
-      - run: sudo npm install -g cypress
-      # - run: sudo npm run e2e
-      # - run: sudo bin/cypress
-      - run: sudo yarn start & wait-on http://localhost:3000
-      - run: sudo cypress run
+    jobs:
+      - cypress/install
+      - cypress/run:
+          yarn: true
+          install-command: yarn install --frozen-lockfile
+          executor: cypress/base-14
+          start: npm start
+          wait-on: "http://localhost:3000"
