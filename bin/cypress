@@ -1,4 +1,4 @@
 #!/bin/bash
 
-sudo yarn start & wait-on http://localhost:3000
-sudo $(yarn bin)/cypress run
+yarn start & wait-on http://localhost:3000
+$(yarn bin)/cypress run
