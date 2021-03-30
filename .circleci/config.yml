@@ -25,7 +25,8 @@ jobs:
       # - run: yarn lint
       # - run: yarn unit
       # - run: sudo chown -R $USER /usr/local/lib/node_modules
-      - run: sudo npm install -g wait-on cypress
+      - run: sudo npm install -g wait-on
+      - run: sudo npm install -g cypress
       # - run: sudo npm run e2e
       # - run: sudo bin/cypress
       - run: sudo yarn start & wait-on http://localhost:3000
