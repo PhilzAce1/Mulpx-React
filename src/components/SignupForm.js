@@ -122,7 +122,7 @@ const SigninForm = () => {
 						padding: '10px',
 					}}
 				>
-					Login
+					Sign up
 				</Button>
 				{/* Or <a href="">register now!</a> */}
 			</Form.Item>
