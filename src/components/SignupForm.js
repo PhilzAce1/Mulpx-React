@@ -27,7 +27,11 @@ const SigninForm = () => {
 				rules={[
 					{
 						required: true,
-						message: 'Please input your Username!',
+						message: 'Please input your email!',
+					},
+					{
+						type: 'email',
+						message: 'Please input a correct email',
 					},
 				]}
 				label="Email"
@@ -35,6 +39,7 @@ const SigninForm = () => {
 				<Input
 					//   prefix={<UserOutlined className="site-form-item-icon" />}
 					placeholder="Email"
+					id="email"
 					className="custom_input"
 				/>
 			</Form.Item>
@@ -45,6 +50,10 @@ const SigninForm = () => {
 						required: true,
 						message: 'Please input your Full name!',
 					},
+					{
+						min: 4,
+						message: 'min of 4 text',
+					},
 				]}
 				label="Fullname"
 			>
@@ -52,6 +61,7 @@ const SigninForm = () => {
 					//   prefix={<LockOutlined className="site-form-item-icon" />}
 					type="text"
 					placeholder="Fullname"
+					id="fullname"
 					className="custom_input"
 				/>
 			</Form.Item>
@@ -62,12 +72,17 @@ const SigninForm = () => {
 						required: true,
 						message: 'Please input your Phone number!',
 					},
+					{
+						min: 4,
+						message: 'min of 4 text',
+					},
 				]}
 				label="Phone Number"
 			>
 				<Input
 					//   prefix={<LockOutlined className="site-form-item-icon" />}
 					type="tel"
+					id="phonenumber"
 					placeholder="Phone number"
 					className="custom_input"
 				/>
@@ -80,6 +95,10 @@ const SigninForm = () => {
 						required: true,
 						message: 'Please input your Password!',
 					},
+					{
+						min: 4,
+						message: 'min of 4 text',
+					},
 				]}
 				label="Password"
 			>
@@ -87,6 +106,7 @@ const SigninForm = () => {
 					//   prefix={<LockOutlined className="site-form-item-icon" />}
 					type="password"
 					placeholder="Password"
+					id="password"
 					className="custom_input"
 				/>
 			</Form.Item>

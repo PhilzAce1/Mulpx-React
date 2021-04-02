@@ -24,14 +24,19 @@ const LoginForm = () => {
 				rules={[
 					{
 						required: true,
-						message: 'Please input your Username!',
+						message: 'Please input your Email!',
+					},
+					{
+						type: 'email',
+						message: 'Please input a correct email',
 					},
 				]}
 				label="Email"
 			>
 				<Input
+					id="email"
 					//   prefix={<UserOutlined className="site-form-item-icon" />}
-					placeholder="Username"
+					placeholder="Email"
 					className="custom_input"
 				/>
 			</Form.Item>
@@ -42,6 +47,10 @@ const LoginForm = () => {
 						required: true,
 						message: 'Please input your Password!',
 					},
+					{
+						min: 4,
+						message: 'min of 4 text',
+					},
 				]}
 				label="Password"
 			>
@@ -49,6 +58,7 @@ const LoginForm = () => {
 					//   prefix={<LockOutlined className="site-form-item-icon" />}
 					type="password"
 					placeholder="Password"
+					id="password"
 					className="custom_input"
 				/>
 			</Form.Item>
