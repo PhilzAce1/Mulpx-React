@@ -1,0 +1,18 @@
+:root {
+	--lightBrown: #dba976;
+	--black: #232528;
+}
+
+.box2 {
+	width: 100px;
+	height: 120px;
+	border-color: var(--lightBrown);
+	border-style: solid;
+	border-radius: 15px;
+	text-align: center;
+	color: var(--black);
+}
+
+strong {
+	letter-spacing: 4px;
+}

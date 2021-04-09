@@ -1,0 +1,19 @@
+:root {
+	--lightGray: #dbd0c2;
+	--black: #000;
+	--primaryGreen: #0d4138;
+}
+
+.box4 {
+	width: 100px;
+	height: 95px;
+	border-color: var(--lightGray);
+	border-style: solid;
+	border-radius: 15px;
+	text-align: center;
+	color: var(--black);
+}
+
+.logo-bg2 {
+	background: var(--primaryGreen);
+}

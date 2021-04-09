@@ -1,0 +1,21 @@
+::root {
+	--white: #f2f2f2;
+	--darkBrown: #7d5c44;
+	--lightBrown: rgba(219, 169, 118, 0.8);
+}
+
+.box {
+	width: 180px;
+	height: 120px;
+	background-color: var(--darkBrown);
+	border-radius: 15px;
+	color: var(--white);
+}
+
+.amount {
+	font-size: large;
+}
+
+.icon {
+	color: var(--lightBrown);
+}

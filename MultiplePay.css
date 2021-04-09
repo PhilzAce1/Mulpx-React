@@ -1,0 +1,26 @@
+:root {
+	--primaryGreen: #0d4138;
+	--lightGray: #dbd0c2;
+	--darkBrown: #7d5c44;
+	--white: #fff;
+}
+
+.box {
+	width: 200px;
+	height: 95px;
+	background-color: var(--lightGray);
+	border-radius: 15px;
+	text-align: left;
+	color: #000;
+}
+
+.logo-bg {
+	background: var(--darkBrown) !important;
+}
+
+.button {
+	background-color: var(--primaryGreen);
+	color: var(--white);
+	width: 25% !important;
+	font-size: 1rem !important;
+}
