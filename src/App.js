@@ -8,7 +8,7 @@ import SigninPage from 'pages/Signin';
 import SignupPage from 'pages/Signup';
 
 /*============= For testing/viewing  new page/components =============*/
-import MultiPayment from 'Components/MultiPayment';
+import MultiPayment from 'components/MultiPayment';
 
 /**=================Style==================== */
 import 'bootstrap/dist/css/bootstrap.min.css';
