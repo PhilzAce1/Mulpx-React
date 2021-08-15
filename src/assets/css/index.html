@@ -1,23 +1,29 @@
-import React from 'react';
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="MultiPayment.css">
+    <title>Document</title>
+</head>
+<body>
 
-import '../assets/css/MultiPayment.css';
-
-function MultiPayment() {
-	return <div>{<section class="section-form">
+<section class="section-form">
     <div class="header">
-        <h1>&leftarrow; Multiple Payment </h1> 
+        <img src="./left-arrow .svg" alt="" srcset="">
+        <h1> Multiple Payment </h1> 
      </div>
-    <div class="box">
-
-        <h2>payment Beneficiaries</h2>
+    <div class="box box--top">
+        <div class="toggle-box__text toggle-box__text--01">Payment Beneficiaries</div>
 
         <div class="toggle-box">
-            <span class="toggle__text">fill same amount</span>
+            <span class="toggle-box__text toggle-box__text--02">Fill same amount</span>
             <input type="checkbox" name="" id="toggle-auto-complete">
-            <label for="toggle-auto-complete"  class="toggle-switch">&nbsp; <span class="toggle-switch__botton"></span></label>
-
+            <label for="toggle-auto-complete" id="toggleButton" class="toggle-switch">&nbsp;</label>
+           
             <input type="checkbox" name="" id="toggle-delete">
-            <label for="toggle-delete" id="toggle-delet" class="toggle-delete"> &#128465;</label>
+            <label for="toggleDelete" id="toggle-delete" class="toggle-delete"> <img src="./Vector.png" alt="" srcset=""></label>
         </div>
 
     </div>
@@ -26,38 +32,38 @@ function MultiPayment() {
     <form action="#" class="form">
         <div class="form__detail">
 
-            <input type="checkbox" class="checked" name="account-num" id="form--01">
+            <input type="checkbox" id="select" class="checked" name="account-num" id="form--01">
             <input type="number" placeholder="Account no/Phone no" name="acc-num" id="">
             <input type="text" placeholder="Bank name" name="acc-name" id="">
             <input type="number" placeholder="Amount" name="amount" id="">
         </div>
         <div class="form__detail"> 
-            <input type="checkbox" name="account-num" id="form--01">
+            <input type="checkbox" id="" name="account-num" id="form--01">
             <input type="number" placeholder="Account no/Phone no" name="acc-num" id="">
             <input type="text" placeholder="Bank name" name="acc-name" id="">
             <input type="number" placeholder="Amount" name="amount" id="">
         </div>
         <div class="form__detail">
-            <input type="checkbox" name="account-num" id="form--01">
+            <input type="checkbox" id="" name="account-num" id="form--01">
             <input type="number" placeholder="Account no/Phone no" name="acc-num" id="">
             <input type="text" placeholder="Bank name" name="acc-name" id="">
             <input type="number" placeholder="Amount" name="amount" id="">
         </div> 
 
         <div class="form__detail">
-            <input type="checkbox" name="account-num" id="form--01">
+            <input type="checkbox" id="" name="account-num" id="form--01">
             <input type="number" placeholder="Account no/Phone no" name="acc-num" id="">
             <input type="text" placeholder="Bank name" name="acc-name" id="">
             <input type="number" placeholder="Amount" name="amount" id="">
         </div>
-        <div class="box">
-            <a href="#" class="btn">&male; Pay from group list</a>
+        <div class="box box--bottom">
+            <a href="#" class="btn"><img src="./network 1.png" alt="" srcset=""> Pay from group list</a>
             <a href="#" class="btn">&plus; Add recipients</a>
         </div>
         <button type="submit">Pay</button>
     </form>
 
-</section>}</div>;
-}
+</section>
 
-export default MultiPayment;
+</body>
+</html>
