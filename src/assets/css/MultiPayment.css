@@ -2,6 +2,7 @@
 /* Your CSS styling for the multiple payment page goes in here by Abayomi. */
 :root {
   --lightGray: #F2F2F2;
+  --lightGray--01: #DBD0C2;
   --gray:#E5E5E5;
   --black:#000000;
   --dark-green: #0D4138;
@@ -19,13 +20,21 @@ body {
   margin: auto;
   margin: 0;
   min-width: 400px;
+  font-family: sans-serif;
 }
 
 .header {
+  display: flex;
+  font-family: sans-serif;
   padding: 1rem;
+  padding-left: 30px;
   margin-bottom: 1rem;
-  font-size: 2rem;
+  font-size: 1.8rem;
+  line-height: 1.8rem;
   background: var(--gray);
+}
+.header img{
+  margin-right: 10px;
 }
 
 .form {
@@ -44,7 +53,7 @@ body {
 }
 
 .form__detail {
-  display: -webkit-box;
+  display: -w ebkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: space-evenly;
@@ -79,7 +88,7 @@ body {
       -ms-flex-positive: 1;
           flex-grow: 1;
   padding: 1rem;
-  border: .1rem solid gray;
+  border: 2px solid var(--lightGray--01);
   background-color: var(--gray);
   width: 40px;
 }
@@ -104,24 +113,44 @@ body {
           align-items: center;
 }
 
-.toggle__text {
-  font-size: 1.3rem;
+.toggle-box__text {
   display: inline-block;
-  color: var(--black);
   margin-right: 1rem;
+}
+.toggle-box__text--01{
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.toggle-box__text--02{
+  font-size: 1.2rem;
 }
 
 .toggle-switch {
   width: 5rem;
-  height: 1.3rem;
+  height: 1.5rem;
   padding: .2rem;
   display: inline-block;
-  border-radius: 1.5rem;
+  border-radius: 2.5rem;
   background: white;
   border: .1rem solid;
+  position: relative;
+  cursor: pointer;
+}
+.toggle-switch::after{
+  content: "";
+  display: inline-block;
+  background-color: black;
+
+  height: 1.5rem;
+  width: 2.1rem;
+  border-radius: 5rem;
+   -webkit-transform: translatex(-0.3rem);
+  transform: translatex(-0.3rem);
 }
 
-.toggle-switch__botton {
+
+
+/* .toggle-switch__botton {
   width: 2.5rem;
   height: 1.3rem;
   background-color: gray;
@@ -129,7 +158,7 @@ body {
   border-radius: 1.5rem;
   -webkit-transform: translatex(-0.5rem);
           transform: translatex(-0.5rem);
-}
+} */
 
 .toggle-delete {
   font-size: 3rem;
@@ -145,25 +174,34 @@ body {
   background-color: var(--dark-green);
 }
 
-.toggle-box input[type='checkbox']:checked + .toggle-switch .toggle-switch__botton {
+.toggle-box input[type='checkbox']:checked + .toggle-switch:after {
   background-color: var(--gray);
-  -webkit-transform: translateX(2rem);
-          transform: translateX(2rem);
+  -webkit-transform: translateX(3rem);
+          transform: translateX(2.2rem);
 }
 
 /* submit button */
 button[type='submit'] {
   padding: 1rem;
   border-radius: 20px;
-  width: 80%;
-  background-color: var(--dark-green);
+  width: 85%;
+  background-color:#787878;
   color: white;
   cursor: pointer;
 }
 
+button[type='submit']:hover{
+  background-color: var(--dark-green);
+}
+
 .box {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  color: #787878;
+  font-family:sans-serif Neue Haas Unica;
   width: 90%;
-  margin: auto;
+  margin:2.5rem auto .5rem;
   min-width: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -171,6 +209,7 @@ button[type='submit'] {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+          align-items: center;
 }
 
 .box .btn {
